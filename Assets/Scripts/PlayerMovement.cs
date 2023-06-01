@@ -6,11 +6,11 @@ public class PlayerMovement : MonoBehaviour
     private CharacterController controller;
     private Vector3 playerVelocity;
     private Vector3 move;
-    public bool groundedPlayer;
+    private bool groundedPlayer;
     private bool shouldJump = false;
-    private float playerSpeed = 3.0f;
-    private float jumpHeight = 2.0f;
-    private float gravityValue = -9.81f;
+    private readonly float playerSpeed = 4.0f;
+    private readonly float jumpHeight = 2.0f;
+    private readonly float gravityValue = -9.81f;
 
     private void Start()
     {
