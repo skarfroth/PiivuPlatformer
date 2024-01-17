@@ -61,7 +61,7 @@ public class PlayerMovement : MonoBehaviour
     {
         Ray ray = new(transform.position, Vector3.down);
 
-        if (Physics.Raycast(ray, out RaycastHit hitInfo, 5f))
+        if (Physics.Raycast(ray, out RaycastHit hitInfo, 2f))
         {
             Quaternion slopeRotation = Quaternion.FromToRotation(Vector3.up, hitInfo.normal);
             Vector3 adjustedVelocity = slopeRotation * velocity;
